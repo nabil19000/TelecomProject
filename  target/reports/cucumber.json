@@ -1,0 +1,110 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2346315000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the user is on the Add Customer page",
+            "match": {
+              "location": "stepDefinition.Steps.the_user_is_on_the_Add_Customer_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-03-20T00:20:11.460Z",
+        "line": 5,
+        "name": "Verify that FirstName and LastName cannot be Blank",
+        "description": "",
+        "id": "add-customer-module-link-https://demo.guru99.com/telecom/addcustomer.php;verify-that-firstname-and-lastname-cannot-be-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 163482000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "they attempt to submit the form with blank FirstName and LastName",
+            "match": {
+              "location": "stepDefinition.Steps.they_attempt_to_submit_the_form_with_blank_FirstName_and_LastName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10077929000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "an error message should be displayed stating \"Customer name must not be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Customer name must not be blank\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinition.Steps.an_error_message_should_be_displayed_stating(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59612000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the submission should fail",
+            "match": {
+              "location": "stepDefinition.Steps.the_submission_should_fail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 225280000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "close browser",
+            "match": {
+              "location": "stepDefinition.Steps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@Test1"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Add Customer Module link https://demo.guru99.com/telecom/addcustomer.php",
+    "description": "",
+    "id": "add-customer-module-link-https://demo.guru99.com/telecom/addcustomer.php",
+    "keyword": "Feature",
+    "uri": "file:features/AddCustomerModule.feature",
+    "tags": []
+  }
+]
